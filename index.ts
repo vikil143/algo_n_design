@@ -1,10 +1,12 @@
-import { findLargestElement } from "./src/algorithm/easy/Q1"
+import { qOneMain } from "./src/algorithm/easy/Q1"
+import { reverseStringMain } from "./src/algorithm/easy/Q2";
 
 function main() {
-    const numbers = [3, 5, 7, 2, 8];
-    const largestNumber = findLargestElement(numbers);
-    console.log("Question 1 Solution:");
-    console.log(`The largest number is: ${largestNumber}`); // Output: The largest number is: 8
+    console.log("-----------------------");
+    qOneMain();
+    console.log("-----------------------");
+    reverseStringMain();
+    console.log("-----------------------");
 }
 
 main();

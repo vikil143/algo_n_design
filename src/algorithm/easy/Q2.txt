@@ -1,0 +1,17 @@
+2. Reverse a string without using built-in reverse()
+
+Example:
+Input → "vikil"
+Output → "likiv"
+
+❓ Your Task:
+
+Write the logic (plain English or JavaScript) to reverse the string manually.
+
+🧩 Hint (optional):
+
+Create an empty string result = ""
+
+Loop from the end of the string to the start
+
+Add each character to result
