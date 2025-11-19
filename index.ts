@@ -1,4 +1,4 @@
-import { findLargestElement } from "./src/algorithm/Q1"
+import { findLargestElement } from "./src/algorithm/easy/Q1"
 
 function main() {
     const numbers = [3, 5, 7, 2, 8];
