@@ -1,7 +1,7 @@
 3. Two Sum Problem (Very common in interviews)
 Problem:
 
-Given an array of numbers and a target sum, return the indices of the two numbers that add up to the target.
+Given an array of numbers and a target(15) sum, return the indices of the two numbers that add up to the target.
 
 Example:
 
