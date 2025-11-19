@@ -1,5 +1,4 @@
-import { describe, it } from "@jest/globals";
-import expect from "expect";
+import { describe, expect, it } from "@jest/globals";
 import { twoSum } from "../../../src/algorithm/medium/Q1";
 
 describe("Medium Algorithm Questions Tests", () => {
