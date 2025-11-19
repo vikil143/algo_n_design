@@ -1,0 +1,15 @@
+1. Find the largest number in an array
+Example:
+Input → [5, 3, 9, 2, 7]
+Output → 9
+❓ Your Task:
+
+Write the logic (in plain English OR JavaScript code) to find the largest number.
+
+🧩 Hint (if needed):
+
+Start with a variable max = first element
+
+Loop each item
+
+If item > max → update max
