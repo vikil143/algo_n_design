@@ -17,6 +17,12 @@ const reverseStringWithoutLoop = (str: string): string => {
     return reversed;
 }
 
+// Other way of reverse string
+const reverseStringWithSubString = (str: string): string => {
+    if (str === "") return "";
+    return reverseStringWithSubString(str.substr(1)) + str.charAt(0);
+}
+
 function reverseStringMain() {
     console.log("Queston 2 Solution:");
     console.log("Reversing string 'hello world':");
@@ -24,7 +30,9 @@ function reverseStringMain() {
     console.log("Using in-build functions to reverse the string.");
     console.log(`Reversed string is: ${reverseStringWithInBuildFn(str)}`);
     console.log("Using custom recursive function to reverse the string.");
-    console.log(`Reversed string is: ${reverseStringWithInBuildFn(str)}`);
+    console.log(`Reversed string is: ${reverseStringWithoutLoop(str)}`);
+    console.log("Using custom function without loop to reverse the string.");
+    console.log(`Reversed string is: ${reverseStringWithSubString(str)}`);
 }
 
 export { reverseString, reverseStringWithInBuildFn, reverseStringWithoutLoop, reverseStringMain };
