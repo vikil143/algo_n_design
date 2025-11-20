@@ -77,6 +77,16 @@ const mediumQOneMain = () => {
     } else {
         console.log("No two sum solution found.");
     }
+
+    console.log("Finding two sum indices in the array [1, 2, 3] for target 7:");
+    const nums5 = [1, 2, 3];
+    const target5 = 7;
+    const result5 = twoSum(nums5, target5);
+    if (result5) {       
+        console.log(`Indices found: [${result5[0]}, ${result5[1]}]`); 
+    } else {
+        console.log("No two sum solution found.");
+    }
 }
 
 export { twoSum, mediumQOneMain };

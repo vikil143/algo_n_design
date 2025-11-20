@@ -9,17 +9,11 @@ const findLargestElement = (arr: number[]): number | null => {
     return largest;
 };
 
-// Example usage:
-const numbers = [3, 5, 7, 2, 8];
-const largestNumber = findLargestElement(numbers);
-console.log(`The largest number is: ${largestNumber}`); // Output: The largest number is: 8
-
 const qOneMain = () => {
     console.log("Question 1 Solution:");
     console.log("Finding largest element in the array [3, 5, 7, 2, 8]:");
     const numbers = [3, 5, 7, 2, 8];
     const largestNumber = findLargestElement(numbers);
-    console.log(`The largest number is: ${largestNumber}`);
 }
 
 export { findLargestElement, qOneMain };
