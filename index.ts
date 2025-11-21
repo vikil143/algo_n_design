@@ -1,5 +1,6 @@
 import { qOneMain } from "./src/algorithm/easy/Q1"
 import { reverseStringMain } from "./src/algorithm/easy/Q2";
+import { mainInverviewQ1 } from "./src/algorithm/interview/flatten";
 import { mediumQOneMain } from "./src/algorithm/medium/Q1";
 import { mediumQTwoMain } from "./src/algorithm/medium/Q2";
 import { mediumQThreeMain } from "./src/algorithm/medium/Q3";
@@ -19,6 +20,7 @@ function main() {
     console.log("-----------------------");
     mediumQThreeMain();
     console.log("-----------------------");
+    mainInverviewQ1();
     // You can add calls to medium level question main functions here
     console.log("-----------------------");
 }

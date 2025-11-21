@@ -1,0 +1,20 @@
+Q Flatten the give object?
+Input ==> 
+const user = {
+   name: "name",
+   address: {
+     address_line_1: "Address Line 1",
+     address_line_2: "Address Line 2",
+     pin: "000000",
+   },
+   job: null,
+}
+Output ==> 
+{
+  name: "name",
+  address_address_line_1: "Address Line 1",
+  address_address_line_2: "Address Line 2",
+  address_pin: "000000",
+  job: null
+}
+
