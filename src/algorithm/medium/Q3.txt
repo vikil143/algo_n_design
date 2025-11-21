@@ -1,0 +1,23 @@
+5. 3Sum Problem
+Problem:
+
+Given an integer array nums, return all unique triplets [a, b, c]
+such that:
+a + b + c = 0
+Conditions:
+
+Triplets must be unique
+
+Order inside each triplet doesn’t matter
+
+Order of triplets also doesn’t matter
+Example:
+
+Input →
+[-1, 0, 1, 2, -1, -4]
+
+Output →
+[
+  [-1, -1, 2],
+  [-1,  0, 1]
+]

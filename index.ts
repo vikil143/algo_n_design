@@ -2,6 +2,7 @@ import { qOneMain } from "./src/algorithm/easy/Q1"
 import { reverseStringMain } from "./src/algorithm/easy/Q2";
 import { mediumQOneMain } from "./src/algorithm/medium/Q1";
 import { mediumQTwoMain } from "./src/algorithm/medium/Q2";
+import { mediumQThreeMain } from "./src/algorithm/medium/Q3";
 
 function main() {
     console.log("-----------------------");
@@ -15,6 +16,9 @@ function main() {
     mediumQOneMain();
     console.log("-----------------------");
     mediumQTwoMain();
+    console.log("-----------------------");
+    mediumQThreeMain();
+    console.log("-----------------------");
     // You can add calls to medium level question main functions here
     console.log("-----------------------");
 }

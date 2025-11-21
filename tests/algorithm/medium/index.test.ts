@@ -1,6 +1,7 @@
 import { describe, expect, it } from "@jest/globals";
 import { twoSum } from "../../../src/algorithm/medium/Q1";
 import { findLongestSubStringLength, longestSubstringLengthASCII } from "../../../src/algorithm/medium/Q2";
+import { tripleSum } from "../../../src/algorithm/medium/Q3";
 
 describe("Medium Algorithm Questions Tests", () => {
     it("should return the indices of two numbers that add up to 15", () => {
@@ -70,5 +71,34 @@ describe("Medium Algorithm Questions Tests", () => {
         const string4 = "";
         const result4 = longestSubstringLengthASCII(string4);
         expect(result4).toBe(0); // <-- correct matcher
+    });
+});
+
+describe("Medium Algorithm Questions Tests", () => {
+    it("should return null when no three numbers sum to zero", () => {
+        const nums = [1, 2, -2, -1];
+        const result = tripleSum(nums);
+        expect(result).toBeNull(); // <-- correct matcher
+        const nums2 = [-1, 0, 1, 2, -1, -4];
+        const result2 = tripleSum(nums2);
+        expect(result2).toEqual([[-1, 0, 1], [-1, -1, 2]]); // <-- correct matcher
+        const nums3 = [0, 0, 0, 0];
+        const result3 = tripleSum(nums3);
+        expect(result3).toEqual([[0, 0, 0]]); // <-- correct matcher
+        const nums4 = [3, -2, 1, 0];
+        const result4 = tripleSum(nums4);
+        expect(result4).toBeNull(); // <-- correct matcher
+        const nums5 = [-2, 0, 1, 1, 2];
+        const result5 = tripleSum(nums5);
+        expect(result5).toEqual([[-2, 1, 1], [-2, 0, 2]]); // <-- correct matcher
+        const nums6: number[] = [];
+        const result6 = tripleSum(nums6);
+        expect(result6).toBeNull(); // <-- correct matcher
+        const nums7 = [0];
+        const result7 = tripleSum(nums7);
+        expect(result7).toBeNull(); // <-- correct matcher
+        const nums8 = [-1, 0, 1, 0];
+        const result8 = tripleSum(nums8);
+        expect(result8).toEqual([[-1, 0, 1]]); // <-- correct matcher
     });
 });

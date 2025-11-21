@@ -1,0 +1,1 @@
+Q. Find the kth smallest, largest, frequent element from the array?
