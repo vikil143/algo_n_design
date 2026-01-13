@@ -1,4 +1,4 @@
-import { checkArraySorted, largestElement, missingNumberInArray, secondLargestElement, solutionMissingNumberInArray } from "./basicOperations";
+import { checkArraySorted, largestElement, missingNumberInArray, rotateArray, rotateArraySolutionTwo, secondLargestElement, solutionMissingNumberInArray } from "./basicOperations";
 
 export function topMateMain() {
     const array = [3, 5, 7, 8, 2];
@@ -32,4 +32,25 @@ export function topMateMain() {
     console.log("Finding the missing number in the array:", arrayWithMissingNumber3);
     const missingNumber3 = solutionMissingNumberInArray(arrayWithMissingNumber3);
     console.log(`The missing number in the array is: ${missingNumber3}`);
+    console.log("-----------------------");
+
+    const rArr1 = [1,2,3,4,5,6,7]
+    const k = 3;
+    console.log(`Rotating the array ${rArr1} by ${k} positions (Solution 1):`);
+    const rotated1 = rotateArray(rArr1, k);
+    console.log(`Rotated array is: ${rotated1}`);
+    console.log("-----------------------");
+    console.log(`Rotating the array ${rArr1} by ${k} positions (Solution 2):`);
+    const rotated2 = rotateArraySolutionTwo(rArr1, k);
+    console.log(`Rotated array is: ${rotated2}`);
+    console.log("-----------------------");
+    const rArr2 = [-1,-100,3,99];
+    console.log(`Rotating the array ${rArr2} by ${k} positions (Solution 1):`);
+    const rotated3 = rotateArray(rArr2, k);
+    console.log(`Rotated array is: ${rotated3}`);
+    console.log("-----------------------");
+    console.log(`Rotating the array ${rArr2} by ${k} positions (Solution 2):`);
+    const rotated4 = rotateArraySolutionTwo(rArr2, k);
+    console.log(`Rotated array is: ${rotated4}`);
+    console.log("-----------------------");
 }

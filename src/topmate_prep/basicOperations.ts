@@ -69,3 +69,21 @@ export const solutionMissingNumberInArray = (arr: number[]): number => {
 
     return xorFull ^ xorArr;
 }
+
+export const rotateArray = (arr: number[], k: number): number[] => {
+    const n = arr.length;
+    k = k % n; // In case k is greater than n
+    const rotatedArray = arr.slice(n - k).concat(arr.slice(0, n - k));
+    return rotatedArray;
+}
+
+export const rotateArraySolutionTwo = (arr: number[], k: number): number[] => {
+    const n = arr.length;
+    k = k % n; // In case k is greater than n
+    const rotatedArray: number[] = [];
+    for (let i = 0; i < n; i++) {
+        const newIndex = (i + k) % n;
+        rotatedArray[newIndex] = arr[i]!;
+    }   
+    return rotatedArray;
+}
