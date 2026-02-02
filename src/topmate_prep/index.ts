@@ -1,4 +1,5 @@
 import { checkArraySorted, largestElement, missingNumberInArray, rotateArray, rotateArraySolutionTwo, secondLargestElement, solutionMissingNumberInArray } from "./basicOperations";
+import { reverseArray } from "./twoPointer";
 
 export function topMateMain() {
     const array = [3, 5, 7, 8, 2];
@@ -53,4 +54,11 @@ export function topMateMain() {
     const rotated4 = rotateArraySolutionTwo(rArr2, k);
     console.log(`Rotated array is: ${rotated4}`);
     console.log("-----------------------");
+    console.log("Two Pointer topics to be implemented...");
+    const arrToReverse = [1, 2, 3, 4, 5];
+    console.log("Reversing the array:", arrToReverse);
+    const reversedArray = reverseArray(arrToReverse);
+    console.log(`Reversed array is: ${reversedArray}`);
+
+    
 }
